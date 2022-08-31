@@ -6,25 +6,32 @@
 ******************************************************************************
 4. Subject With Service Pattern to Ngrx With Facade Pattern !
 ******************************************************************************
-5. Presenter Container Component Pattern
+5. Change Detection - onPush, NgZone, Unidirectional Data Flow 
 ******************************************************************************
-6. Router Guards
+6. Content Projection & Template Ref's
 ******************************************************************************
-7. Authentication
+7. Dynamic Components via Host Views or Components
 ******************************************************************************
-8. Lazy Loading
+
+8. Presenter Container Component Pattern
 ******************************************************************************
-9. Source Map Explorer & Bundle Budgets!
+9. Router Guards
 ******************************************************************************
-10. Control Value Accessor
+10. Authentication
 ******************************************************************************
-11. Typeahead Component
+11. Lazy Loading
 ******************************************************************************
-12. Angular CDK like Overlay, Portal etc.
+12. Source Map Explorer & Bundle Budgets!
 ******************************************************************************
-13. Dependency Injection, Injection Tokens,
+13. Control Value Accessor
 ******************************************************************************
-14. Unit Testing
+14. Typeahead Component
+*****************************************************************************
+15. Angular CDK like Overlay, Portal etc.
 ******************************************************************************
-15. TypeScript
+16. Dependency Injection, Injection Tokens,
+******************************************************************************
+17. Unit Testing
+******************************************************************************
+18. TypeScript
 ******************************************************************************
