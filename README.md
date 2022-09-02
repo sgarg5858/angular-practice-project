@@ -1,4 +1,17 @@
 1. APP_INTITIALIZER 
+
+Built-in Injection Token which we can use to load some data before Angular Starts bootstrapping our application.
+It expects functions and those functions can either return value or Promise<value> or Observable<Value>
+It will wait for promises to resolve & observables to complete & error out, 
+We can provide multiple functions and it will wait until our functions have executed , if every function is completed successfully,
+then only it will start with bootstrapping process, else it will cancel the bootstrap.
+
+ We usually store our END points in environment files, but drawback is that we can't change them at runtime, but if we store them in
+ database we can make changes to them at runtime. So basically we can use this feature to load end points at runtime!
+  
+  What if our api fails where and how to handle the error?
+  https://stackoverflow.com/questions/48564687/how-to-handle-inform-users-about-unrecoverable-exceptions-in-an-app-initializer
+  
 ******************************************************************************
 2. HTTP_INTERCEPTORS
 ******************************************************************************
