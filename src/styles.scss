@@ -49,3 +49,26 @@ $angular-dark-theme: mat.define-dark-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#keepingUserUpdatedAboutAppInitialization{
+  width: 300px;
+  font-size: 24px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loading{
+  border: 5px dotted dodgerblue;  
+}
+.error{   
+    border: 5px dotted red;
+}
+#initialContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

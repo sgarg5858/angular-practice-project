@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TypeaheadModule } from './typeahead/typeahead.module';
 import {HttpClientModule} from '@angular/common/http'
+import { InitializerModule } from './initializer/initializer.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +16,8 @@ import {HttpClientModule} from '@angular/common/http'
     AppRoutingModule,
     BrowserAnimationsModule,
     TypeaheadModule,
-    HttpClientModule
+    HttpClientModule,
+    InitializerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

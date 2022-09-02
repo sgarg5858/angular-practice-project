@@ -9,4 +9,19 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+.then(()=>{
+  const keepingUserUpdatedElement = document.getElementById('initialContainer');
+  if(keepingUserUpdatedElement)
+  {
+    keepingUserUpdatedElement.remove();
+  }
+})
+  .catch(err => {
+    const keepingUserUpdatedElement = document.getElementById('keepingUserUpdatedAboutAppInitialization');
+    if(keepingUserUpdatedElement)
+    {
+      keepingUserUpdatedElement.classList.remove('loading');
+      keepingUserUpdatedElement.classList.add('error');
+      keepingUserUpdatedElement.textContent="APP Startup Failed! :(";
+    }
+  });

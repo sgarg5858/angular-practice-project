@@ -8,11 +8,9 @@
                 [matAutocomplete]="auto"
                  />
                 <mat-autocomplete #auto="matAutocomplete">
-                   <ng-container *ngIf="filteredEmails !=undefined ">
                     <mat-option *ngFor="let option of filteredEmails | async" [value]="option">
                         {{option}}
                       </mat-option>
-                   </ng-container>
                   </mat-autocomplete>
             </mat-form-field>
     </mat-card>
