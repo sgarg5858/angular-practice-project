@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommentService } from '../comment.service';
+import { CommentService, IComment } from '../comment.service';
 
 @Component({
   selector: 'app-comments',
@@ -17,6 +17,9 @@ export class CommentsComponent implements OnInit {
   refresh()
   {
     this.commentService.getComments();
+  }
+  trackByCommentId(index:number,comment:IComment){
+    return comment.id;
   }
 
 }

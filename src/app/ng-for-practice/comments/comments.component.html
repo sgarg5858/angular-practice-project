@@ -3,7 +3,7 @@
 
         <button (click)="refresh()">Refresh Comments</button>
 
-        <app-comment *ngFor="let comment of comments" [comment]="comment">
+        <app-comment *ngFor="let comment of comments;trackBy:trackByCommentId" [comment]="comment">
 
         </app-comment>
     </div>
