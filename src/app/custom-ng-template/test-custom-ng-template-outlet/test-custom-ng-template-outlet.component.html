@@ -1,0 +1,10 @@
+<div *appCustomNgTemplateOutlet="userTemplate;context:user">
+
+</div>
+<ng-template #userTemplate let-name="name">
+    <h1>Hi my name is {{name}}</h1>
+</ng-template>
+
+<div class="test" *appCustomNgIf>
+    Hello
+</div>

@@ -4,3 +4,12 @@ mat-card{
         width: 300px;
     }
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    
+}

@@ -20,7 +20,9 @@ export class DataService {
     console.log(keyword);
     return this.httpClient.get<IComment[]>('https://jsonplaceholder.typicode.com/comments').pipe(
       map((comments)=>{
-        return comments.map((comment)=>comment.email).filter((email)=>email.includes(keyword))
+        return comments
+        .map((comment)=>comment.email)
+        .filter((email)=>email.slice(0,keyword.length).toUpperCase() === keyword.toUpperCase())
       }),
       catchError((err)=>of([]))
     )

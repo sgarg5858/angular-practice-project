@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TypeaheadModule } from './typeahead/typeahead.module';
 import {HttpClientModule} from '@angular/common/http'
 import { InitializerModule } from './initializer/initializer.module';
+import { CustomNgTemplateModule } from './custom-ng-template/custom-ng-template.module';
+import { NgForPracticeModule } from './ng-for-practice/ng-for-practice.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +19,9 @@ import { InitializerModule } from './initializer/initializer.module';
     BrowserAnimationsModule,
     TypeaheadModule,
     HttpClientModule,
-    InitializerModule
+    InitializerModule,
+    CustomNgTemplateModule,
+    NgForPracticeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

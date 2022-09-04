@@ -14,7 +14,8 @@ export class ConfigService {
 
   constructor(
     @Inject(DELAY) private delay:number,
-    private httpClient:HttpClient) { }
+    private httpClient:HttpClient
+    ) { }
 
   //We are using Service with Subject Pattern here because
   // Its easy to switch to ngrx with facade and at the same time gives us
