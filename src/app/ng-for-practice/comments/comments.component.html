@@ -2,7 +2,7 @@
     <div class="container">
 
         <button (click)="refresh()">Refresh Comments</button>
-
+        <!-- Remove this trackBy and see console logs how it helps :) -->
         <app-comment *ngFor="let comment of comments;trackBy:trackByCommentId" [comment]="comment">
 
         </app-comment>
