@@ -17,7 +17,8 @@ import { CustomNgIfDirective } from './custom-ng-if.directive';
   ],
   exports:[
     CustomNgTemplateOultletDirective,
-    TestCustomNgTemplateOutletComponent
+    TestCustomNgTemplateOutletComponent,
+    CustomNgIfDirective
   ]
 })
 export class CustomNgTemplateModule { }

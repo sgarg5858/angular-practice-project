@@ -1,11 +1,12 @@
-<ng-container *ngIf="commentService.comments$ | async as comments">
+<ng-container *myIf="(commentService.comments$ | myAsync) as comments;else boom">
     <div class="container">
 
         <button (click)="refresh()">Refresh Comments</button>
         <!-- Remove this trackBy and see console logs how it helps :) -->
-        <app-comment *ngFor="let comment of comments;trackBy:trackByCommentId" [comment]="comment">
+        <app-comment   *ngFor="let comment of comments;trackBy:trackByCommentId" [comment]="comment">
 
         </app-comment>
     </div>
 
 </ng-container>
+<ng-template #boom></ng-template>
