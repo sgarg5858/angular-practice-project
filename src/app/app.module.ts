@@ -9,6 +9,8 @@ import {HttpClientModule} from '@angular/common/http'
 import { InitializerModule } from './initializer/initializer.module';
 import { CustomNgTemplateModule } from './custom-ng-template/custom-ng-template.module';
 import { NgForPracticeModule } from './ng-for-practice/ng-for-practice.module';
+import { DemoModule } from './demo/demo.module';
+import { TabsModule } from './tabs/tabs.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -21,7 +23,9 @@ import { NgForPracticeModule } from './ng-for-practice/ng-for-practice.module';
     HttpClientModule,
     InitializerModule,
     CustomNgTemplateModule,
-    NgForPracticeModule
+    NgForPracticeModule,
+    DemoModule,
+    TabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

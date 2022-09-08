@@ -1,0 +1,28 @@
+<ng-container *ngIf="(dataService.data$ | async) as persons;else loading">
+
+    <ng-container *ngIf="persons.length>0;else apiFailed">
+
+        <ul>
+            <li *ngFor="let person of persons" (click)="getDetails(person.homeworld)">
+                {{person.name}}
+            </li>
+        </ul>
+        <ng-container *ngIf="(detail$ | async) as detail">
+            <div>
+                {{detail | json}}
+            </div>
+        </ng-container>
+
+
+    </ng-container>
+
+    <ng-template #apiFailed>
+        <h1>Api Failed</h1>
+    </ng-template>
+
+
+</ng-container>
+
+<ng-template #loading>
+    <h1>Loading.....</h1>
+</ng-template>

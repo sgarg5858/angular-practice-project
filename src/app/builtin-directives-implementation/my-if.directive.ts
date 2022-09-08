@@ -26,11 +26,13 @@ export class MyIfDirective<T=unknown> {
     this._context.$implicit = this._context.myIf = condition;
     this._updateView();
   }
+
   @Input()set myIfThen(templateRef:TemplateRef<MyIfContext<T>>|null)
   {
     this._assertTemplate('myIfThen',templateRef);
     this._thenTemplateRef=templateRef;
     this._thenViewRef=null;
+    //will be useful when template is changed
     this._updateView();
   }
   @Input()set myIfElse(templateRef:TemplateRef<MyIfContext<T>>|null)
@@ -38,6 +40,7 @@ export class MyIfDirective<T=unknown> {
     this._assertTemplate('myIfElse',templateRef);
     this._elseTemplateRef=templateRef;
     this._elseViewRef=null;
+    //will be useful when template is changed
     this._updateView();
   }
 
