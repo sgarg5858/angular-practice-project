@@ -11,6 +11,8 @@ import { CustomNgTemplateModule } from './custom-ng-template/custom-ng-template.
 import { NgForPracticeModule } from './ng-for-practice/ng-for-practice.module';
 import { DemoModule } from './demo/demo.module';
 import { TabsModule } from './tabs/tabs.module';
+import { ErrorHandlerModule } from './error-handler/error-handler.module';
+import { InterceptorsModule } from './interceptors/interceptors.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -25,7 +27,9 @@ import { TabsModule } from './tabs/tabs.module';
     CustomNgTemplateModule,
     NgForPracticeModule,
     DemoModule,
-    TabsModule
+    TabsModule,
+    ErrorHandlerModule,
+    InterceptorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

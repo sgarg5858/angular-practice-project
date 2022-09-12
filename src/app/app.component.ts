@@ -12,8 +12,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit()
   {
-   
-  }
+  try {
+    (<any>this.title)();
+  } catch (error:unknown) {
+    throw error;
+  } 
+   }
  
   
 }
